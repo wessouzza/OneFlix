@@ -6,6 +6,7 @@ import {Link} from 'react-router-dom';
 import Button from '../button/Button';
 import apiConfig from '../../api/apiConfig';
 import tmdbApi, {category} from '../../api/tmdbApi';
+import CardMovie from '../../components/movie-card/CardMovie';
 
 const MovieList = props => {
 
@@ -38,7 +39,7 @@ const MovieList = props => {
                 {
                     items.map((item, i) => (
                         <SwiperSlide key={i}>
-                            <img src={apiConfig.w500Image(item.poster_path)} alt='' />
+                            <CardMovie item={item} category={props.category} />
                         </SwiperSlide>
                     ))
                 }           

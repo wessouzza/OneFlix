@@ -34,7 +34,7 @@ export const ModalContent = props => {
         <div ref={contentRef} className='modal__content'>
             {props.children}
             <div className='modal__content__close' onClick={closeModal}>
-                <i className='bx bx-x'>x</i>
+                <i className='far fa-times-circle'></i>
             </div>
         </div>
     )
