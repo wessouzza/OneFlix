@@ -7,7 +7,7 @@ import Grid from '../components/grid/Grid';
 
 const Catalog = () => {
 
-const {category} = useParams;
+const {category} = useParams();
 
   return(
     <>
