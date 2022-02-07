@@ -30,7 +30,7 @@
         border-radius: 1rem;
     }
 
-    @media (hover: hover) and (pointer: fine){
+    @media (hover: hover) {
         &:hover::before {
             opacity: .8;
         }
